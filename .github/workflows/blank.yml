@@ -6,7 +6,7 @@ on:
 jobs:
   deploy_dev:
     name: Deploy to Dev
-    uses: pmcmanaman/caller-test/.github/workflows/reusable-deploy.yml@main
+    uses: pmcmanaman/called-test/.github/workflows/reusable-deploy.yml@main
     with:
       environment: dev
     secrets: inherit
