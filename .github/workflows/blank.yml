@@ -1,0 +1,12 @@
+name: Deploy Pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy_dev:
+    name: Deploy to Dev
+    uses: pmcmanaman/caller-test/.github/workflows/reusable-deploy.yml@main
+    with:
+      environment: dev
+    secrets: inherit
